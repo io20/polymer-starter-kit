@@ -71,4 +71,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     app.$.headerPanelMain.scrollToTop(true);
   };
 
+  // Get full url by adding base url (pathname)
+  app.getUrl = function(suffix) {
+    app.baseUrl = '/';
+    if (window.location.port === '') {  // if production
+      // Set app.baseURL to '/your-pathname/' if running from folder in production
+      // app.baseUrl = '/polymer-starter-kit/';
+    }
+    console.log('getUrl: app.baseUrl ',app.baseUrl );
+    return app.baseUrl.replace(/\/$/, '') + suffix;
+  };
+
 })(document);
