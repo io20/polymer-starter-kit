@@ -155,7 +155,7 @@ Polymer uses [Bower](http://bower.io) for package management. This makes it easy
 ## Deploy
 
 ### Github Pages
-1. Uncomment this line in app.js: `// app.baseUrl = '/polymer-starter-kit/';`  
+1. Uncomment this line  `// app.baseUrl = '/polymer-starter-kit/';` in app.js near the top
 2. Change `app.baseUrl = '/polymer-starter-kit/';`  to `app.baseUrl = '/your-pathname/';`  
 3. Run `build-deploy-gh-pages` from command line
 4. To see changes wait 1-2 minutes then load Github pages for your app (ex: http://polymerelements.github.io/polymer-starter-kit)
